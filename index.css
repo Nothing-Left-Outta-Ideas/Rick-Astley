@@ -1,0 +1,613 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    overflow-x:hidden;
+}
+
+/* Back to top */
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */ /* Set a background color */
+  color:black; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 0px; /* Some padding */
+  /* Rounded corners */
+  font-size: 25px; /* Increase font size */
+}
+
+/* scroll-bar */
+
+::-webkit-Scrollbar{
+    width: 10px; 
+	background: whitesmoke;
+}
+::-webkit-Scrollbar-thumb{
+	border-radius: 7px;
+	background: black;
+	box-shadow: inset 0 0 20px rgba(202, 202, 202, 0);
+}
+::-webkit-Scrollbar-track{
+	margin-top: 80px;
+	border-radius: 0px;
+}
+header{
+    background: black;
+    height: 4rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+ 
+    align-items: center;
+    padding: 10px 10px;  
+
+}
+.sticky {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.navbar{
+    display: inline;
+}
+.sticky {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+a{
+    list-style:none;
+   color:white;
+   text-decoration: none;
+   font-family:  'Poppins', sans-serif;
+}
+a:hover{
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+.rep li{
+    display: inline;
+}
+li{
+    font-size: 2rem;
+    margin-left: 4rem;
+    padding-top: 1rem;
+}
+.home{
+    font-size: 2rem;
+    padding-left: 0rem;
+    padding-top: 0.5rem;
+}
+.rep{
+margin-left: 35rem;
+}
+.image{
+    width:100%;
+    display: block;
+}
+.picture{
+    position: relative;
+    text-align: center;
+    color:white;
+    font-family:  'Poppins', sans-serif;
+    font-size: 10rem;
+    white-space: nowrap;
+    font-weight: bold;
+
+}
+.centered {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.black{
+    width:100%;
+    height:50rem;
+    background: black;
+}
+.siteabt{
+    color: white;
+    position: relative;
+    margin-top: .2rem;
+}
+.rick{
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    font-size: 3rem;
+    font-family:  'Poppins', sans-serif;   
+}
+.top{
+    position: absolute;
+    top: 18%;
+    overflow: hidden;
+    display: block;
+    object-fit: cover;
+    width:98%;
+}
+.middle{
+    position:absolute;
+    top:23%;
+    object-fit: cover;
+    width:93%;
+    left:2.32%;
+    text-align: center;
+
+}
+.bottom{
+    position: absolute;
+    top: 75%;
+    overflow: hidden;
+    display: block;
+    object-fit: cover;
+    width:98%;
+}
+.content{
+    position:absolute;
+   right:100px;
+   overflow: hidden;
+    top:40%;
+    width:90%;
+    padding:2%;
+    font-size: 2rem;
+    font-family:  'Poppins', sans-serif;   
+}
+.white{
+    width:100%;
+    height: 22rem;
+    z-index:10;
+    background-color:#fff;
+    position:relative;
+}
+.member{
+    top:100rem;;
+    position: absolute;
+    object-fit: cover;
+    width:96%;
+    padding:1%;
+    margin-top: -1%;
+    margin-left: 1%;
+    z-index: 10;
+}
+/* VIDYA */
+.rect_container{
+    background-image: url("./assets/code.png");
+    background-repeat: no-repeat;
+    height:100rem;
+    overflow:hidden;
+    z-index: 10;
+    margin-top: -2.8%;
+}
+.rect2{
+    position: absolute;
+    top:125rem;
+    object-fit: cover;
+    width:30%;
+    left:-10%;
+}
+.rect3{
+    position: absolute;
+    top:119rem;
+    object-fit: cover;
+    width:25%;
+    left:12%;
+}
+.rect5{
+    position: absolute;
+    top:150rem;
+    left:0%;
+    width:10%;
+}
+.rect4{
+    position: absolute;
+    top:140rem;
+    left:4%;
+    width:35%;
+}
+.rect6{
+    position:absolute;
+    top:127rem;
+    left:35%;
+    width:40%;
+}
+.rect8{
+    position:absolute;
+    top:165rem;
+    width:29%;
+}
+.rect9{
+    position:absolute;
+    top:148rem;
+    width:50%;
+    left:25%;
+    overflow: hidden;
+}
+.rect10{
+    position:absolute;
+    top:130rem;
+    width:40%;
+    left:70%;
+    overflow: hidden;
+    max-width: 60%;
+}
+.rect11{
+    position:absolute;
+    top:170rem;
+    width:40%;
+    left:30%;
+    overflow: hidden;
+}
+.rect11{
+    position:absolute;
+    top:175rem;
+    width:40%;
+    left:20%;
+    overflow: hidden;
+}
+.rect1{
+    position:absolute;
+    top:170rem;
+    width:40%;
+    left:30%;
+    overflow: hidden;
+}
+.rect12{
+    position:absolute;
+    top:156rem;
+    width:40%;
+    left:60%;
+    overflow: hidden;
+}
+.rect13{
+    position:absolute;
+    top:180rem;
+    left:60%;
+    width:40%;
+    z-index: 0;
+}
+
+.black_box{
+    margin-left:26rem;
+    margin-top: 15rem;
+    opacity: 1;
+    position: absolute;
+}
+.vid_pic{
+    margin-left:34rem;
+    margin-top: 17rem;
+    opacity: 1;
+    position: absolute;
+
+}
+.name_holder{
+    height:3rem;
+    width:20rem;
+    background-color: #fff;
+    margin-left:33rem;
+    margin-top: 32rem;
+    opacity: 1;
+    position: absolute;
+    border-radius: 20px;
+    box-shadow: 1rem;
+}
+.name_holder h1{
+    font-family:'Poppins', sans-serif;  
+    margin-left: 1rem;
+    text-align: center;
+    font-weight:bolder;
+    padding:1%
+}
+.content_hold{
+    margin-top: 36rem;
+    position: relative;
+    margin-left: 32.5rem;
+}
+.content_abt h2{
+    position:absolute;
+    width: 30%;
+    color:#fff;
+    font-size:1.5rem;
+    margin-top:-12rem;
+    left:39%;    
+    z-index: 100;
+    font-family:'Poppins', sans-serif;  
+}
+/* TVISHA */
+/* The backrgound of the image */
+ .tvbg{                                            
+    position: relative;
+    background-image: url("./assets/tvbg.png");
+    background-position: center; 
+    background-size: cover;
+    background-position:50% 50%;
+    margin-top: -22.5rem;;   
+    height:60rem;
+}
+/* The svg parts */
+.tvfg{
+    margin-left: 3.8rem;
+    background-size: cover;
+    background-position:50% 50%;
+    position:relative;
+    top: 120px;
+    width:90%;
+    z-index:50;
+    display: inline-block;
+}
+/* the holder of the text */
+.black_box_t{
+z-index:100;
+position: relative;
+margin-top: -25rem;;
+margin-left: 26rem;;
+width:33%;
+}
+/* profile pic */
+.tvpic{
+  position:absolute;
+  left:40%;
+  top:35%;
+  width:15%;
+  z-index: 100;
+} 
+/* name and text holder */
+.name_holder_t{
+    width: 20rem;
+    height:3rem;
+    margin-top:-20rem;
+    z-index: 1000;
+    position:relative;
+    border-radius: 2rem;
+    left:36%;
+    background: black;
+}
+.name_holder_t h1{
+    color:white;
+    font-family:  'Poppins', sans-serif;
+    text-align:center;  
+    padding:0 auto;
+}
+.name_holder_t p{
+    color:white;
+    padding-top: 9%;
+    font-size: 1.89rem;
+    font-family: 'Oswald', sans-serif;
+    width:24rem;
+    margin-left:-12%;
+}
+/* JEFFREY */
+/* BG */
+.jeffg{
+width:100%;
+height:70rem;
+position:absolute;
+}
+/* the placeholder blob */
+.blob_jeff{
+    width:35%;
+    position: relative;
+    margin-top:18rem;
+    margin-left:29rem;
+    
+}
+/* Picture */
+.jeff_pic{
+    position:relative;
+    top:-15rem;
+    left:-25rem;
+}
+/* place holder of text */
+.name_holder_j{
+    width: 20rem;
+    height:3rem;
+    background: black;
+    position: relative;
+    border-radius:2rem;
+    margin-top: -18rem;
+    margin-left:34rem;
+
+}
+.name_holder_j h1{
+    color:#ffffff;
+    padding:1%;
+    text-align:center;
+    margin-left:0.5rem;
+
+    font-family:  'Poppins', sans-serif;
+}
+
+.name_holder_j p{
+    color:white;
+    padding:3%;
+    font-size:1.5rem;
+    width:25rem;
+    padding-left: 0rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight:bold;
+}
+
+/* AATIQ */
+.aatiq{
+    background-image: url("./assets/aatiqbg.png");
+    background-position:50% 50%;
+    height:65rem;
+    display:block;
+    margin-top: 28rem;
+
+}
+.aatiqbg{
+    width: 90%;
+    margin-top: 10rem;
+    margin-left: 5rem;
+    box-shadow:20px 20px;
+    position:absolute;
+
+}
+.aatiq_block{
+    width:30%;
+    margin-top: 25rem;
+    margin-left:30rem;
+    z-index:100;
+    position:relative;
+}
+.aatiq_pic{
+    width:20%;
+    position:relative;
+    z-index:100;
+    left:-21rem;
+    top:-15rem;
+}
+.name_holder_a{
+    width: 20rem;
+    height:2.99rem;
+    background: black;
+    position: relative;
+    border-radius:2rem;
+    margin-top: -18rem;
+    margin-left:32.5rem;
+    z-index:1000;
+}
+.name_holder_a h1{
+    color:#fff;
+    text-align:center;
+    font-family: 'Oswald', sans-serif;
+    font-weight:400;
+
+}
+.name_holder_a p{
+    z-index:1000;
+    padding:2%;
+    width:22rem;
+    font-size:1.5rem;
+    font-family: 'Oswald', sans-serif;
+    color:white;
+
+
+}
+
+/* blank space */
+
+.blank_space h1{
+    height:20rem;
+    width:40rem;
+    background-color: white;
+    margin-top: 7rem;
+    margin-left:2rem;
+    font-size:10rem;
+    font-family:  'Poppins', sans-serif;  
+
+}
+
+
+/* Footer */
+footer{
+  width: 100%;
+  background:black;
+  padding: 10% 0% 10% 0%;
+  display: block;
+  position: absolute;
+  top:1120%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-style: normal;font-weight: 400;
+}
+.fa-home{
+  font-size: 40px;
+  color: white;
+  position: absolute;
+  top: 10%;
+  left: 0%;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+.footh{
+  font-size: 40px;
+  color: white;
+  position: absolute;
+  top: 8%;
+  left: 4%;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.footh1{
+  font-size: 25px;
+  color: red;
+  position: absolute;
+  top: 34%;
+  left: 1%;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+footer hr{
+ width:20%;
+   height:5px;
+   position: absolute;
+   top:44.5%;
+   left:2%;
+   text-align: center;
+   background: whitesmoke; 
+}
+.footp{
+  font-size: 16px;
+  color: white;
+  position: absolute;
+  top: 57%;
+  left: 1%;
+  font-weight: normal;
+  letter-spacing: 2px;
+}
+.fa-instagram{
+ font-size: 30px;
+  color: white;
+  position: absolute;
+  top: 10%;
+  left: 75%;
+  letter-spacing: 2px;
+  cursor: pointer; 
+}
+.fa-linkedin{
+ font-size: 30px;
+  color: white;
+  position: absolute;
+  top: 10%;
+  left: 79%;
+  letter-spacing: 2px;
+  cursor: pointer; 
+}
+.fa-facebook-square{
+ font-size: 30px;
+  color: white;
+  position: absolute;
+  top: 10%;
+  left: 83%;
+  letter-spacing: 2px; 
+  cursor: pointer;
+}
+.fa-twitter-square{
+ font-size: 30px;
+  color: white;
+  position: absolute;
+  top: 10%;
+  left: 87%;
+  letter-spacing: 2px; 
+  cursor: pointer;
+}
+.fa-envelope{
+ font-size: 30px;
+  color: white;
+  position: absolute;
+  top: 10%;
+  left: 91%;
+  letter-spacing: 2px; 
+  cursor: pointer;
+}
